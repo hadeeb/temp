@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div id="app">
+</div>
+<script>
+  document.addEventListener('AlipayJSBridgeReady', (d) => {
+    console.log(d);
+    document.getElementById("app").innerHTML = JSON.stringify(d);
+  }, false);
+</script>
+</body>
+</html>
